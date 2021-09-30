@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/style.css">
+    <title>EJS</title>
+</head>
+<body>
+    <header>
+        <h1>Pagina EJS</h1>
+    </header>
+
+    <% if(message != ""){ %>
+        <section id="message">
+            <p><%= message %></p><span id="close">&times;</span>
+        </section>
+    <% } %>
+
+    <div>
+        <h2>Nome: <%= nome %></h2>    
+        <h2>Sobrenome: <%= sobrenome %></h2> 
+        <h2>Apelido: <%= apelido %></h2> 
+        <h2>E-mail: <%= email %></h2> 
+        <h2>Senha: <%= senha %></h2>     
+    </div>
+    <script src="./js/script.js"></script>
+</body>
+</html>
